@@ -1,0 +1,60 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('w2_b_core_homepage') }}">Want2Buy</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ path('client') }}">Clientes</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proveedores <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{ path('provider') }}">Listado Proveedores</a></li>
+                        <li><a href="{{ path('provider_catalog') }}">Catálogo Proveedor</a></li>
+                        {#<li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>#}
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{ path('category') }}">Listado Categorías</a></li>
+                        <li><a href="{{ path('category_requirement') }}">Listado Requerimientos</a></li>
+                        <li><a href="{{ path('category_requirement_answer') }}">Respuestas Requerimientos</a></li>
+                        {#<li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>#}
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Seguridad <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{ path('systemuser') }}">Usuarios</a></li>
+                        <li><a href="{{ path('fos_user_group_list') }}">Grupos</a></li>
+                        {#<li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>#}
+                    </ul>
+                </li>
+                <li><a href="{{ path('faq') }}">FAQ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> {{ app.user.username }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{ path('fos_user_profile_show') }}">Profile</a></li>
+                        <li><a href="{{ path('fos_user_profile_edit') }}">Edit Profile</a></li>
+                        <li><a href="{{ path('fos_user_change_password') }}">Change Password</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ path('fos_user_security_logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>

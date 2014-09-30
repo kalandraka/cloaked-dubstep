@@ -1,0 +1,266 @@
+@import "bootstrap-3.2.0/variables";
+@import "bootstrap-3.2.0/mixins.less";
+
+@principal-color-bg: #B8B9BB;
+@hover-color-bg: #3D3D73;
+@white-color: #fff;
+@footer-bg-color: #EFEFF0;
+@footer-font-color: #3E3D74;
+
+@border-radius-base-avahuer: 0;
+@padding-base-vertical-avahuer: 1px;
+@padding-base-horizontal-avahuer: 6px;
+
+// Avahuer navbar
+.navbar-avahuer {
+  background-color: @principal-color-bg;
+  border-color: @principal-color-bg;
+  height: 60px;
+
+  .navbar-brand {
+    color: @navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      background-color: @navbar-default-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @white-color;
+  }
+
+  .navbar-nav {
+    > li {
+      vertical-align: middle;
+      > a {
+        color: @white-color;
+        -moz-transition: all 300ms ease-in-out 0s;
+        -ms-transition: all 300ms ease-in-out 0s;
+        -o-transition: all 300ms ease-in-out 0s;
+        -webkit-transition: all 300ms ease-in-out 0s;
+        transition: all 300ms ease-in-out 0s;
+        padding-top: 22px;
+        padding-bottom: 19px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: -2px;
+        text-transform: uppercase;
+        font-size: 0.85em;
+
+        &:hover,
+        &:focus {
+          color: @white-color;
+          background-color: @hover-color-bg;
+        }
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @white-color;
+        background-color: @hover-color-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-default-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-default-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @principal-color-bg;
+
+    input {
+      background-color: @principal-color-bg;
+      color: @white-color;
+      border: 0;
+      padding: 10px;
+      box-shadow: none;
+    }
+
+    button[type=submit] {
+      background-image: url('../images/search.png');
+      background-color: #B8B9BB;
+      background-size: 26px 22px;;
+      background-repeat: no-repeat;
+      border: 0;
+      width: 32px;
+      height: 27px;
+      margin-top: 8px;
+      padding: 10px;
+    }
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-default-link-active-bg;
+        color: @navbar-default-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+            background-color: @navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-disabled-color;
+            background-color: @navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-default-link-color;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: @navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 32px;
+  background-color: @footer-bg-color;
+  height: 280px;
+  width: 100%;
+  font-size: 16px;
+  color: @footer-font-color;
+  .grupo-v-logo {
+
+  }
+  .grupo-v-contacts {
+    > div {
+      padding-top: 16px;
+    }
+    img {
+      width: 7%;
+      vertical-align: middle;
+    }
+    span {
+      padding-top: 2px;
+      padding-left: 2px;
+      font-size: 0.8em;
+      vertical-align: middle;
+    }
+  }
+  .alternative-footer {
+    height: 30px;
+    background-color: @principal-color-bg;
+    color: @white-color;
+    padding-top: 6px;
+  }
+  .copyright-footer {
+    background-color: @footer-bg-color;
+    color: @principal-color-bg;
+    font-size: 0.9em;
+    padding-top: 3px;
+  }
+}
+
+.btn {
+  .button-size(@padding-base-vertical-avahuer; @padding-base-horizontal-avahuer; @font-size-base; @line-height-base; @border-radius-base-avahuer);
+}
+
+.carousel-indicators {
+/*  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;*/
+
+  li {
+/*    display: inline-block; */
+    width:  14px;
+    height: 14px;
+/*    margin: 1px;
+    text-indent: -999px;*/
+    border: 1px solid @principal-color-bg;
+    background-color: @principal-color-bg;
+/*    border-radius: 10px;
+    cursor: pointer;*/
+
+    // IE8-9 hack for event handling
+    //
+    // Internet Explorer 8-9 does not support clicks on elements without a set
+    // `background-color`. We cannot use `filter` since that's not viewed as a
+    // background color by the browser. Thus, a hack is needed.
+    //
+    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
+    // set alpha transparency for the best results possible.
+//    background-color: #000 \9; // IE8
+//    background-color: rgba(0,0,0,0); // IE9
+  }
+  .active {
+    margin: 0;
+    width:  14px;
+    height: 14px;
+    background-color: @hover-color-bg;
+    border: 1px solid @hover-color-bg;
+  }
+}

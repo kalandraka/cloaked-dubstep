@@ -1,0 +1,11 @@
+app/cache/*
+app/logs/*
+app/boostrap.php.cache
+app/config/parameters.yml
+web/bundles/*
+web/css/*
+web/js/*
+web/uploads/resources/*
+composer.lock
+/vendor
+.idea

@@ -1,0 +1,7 @@
+parameters:
+#    avahuer_web.example.class: Avahuer\WebBundle\Example
+
+services:
+#    avahuer_web.example:
+#        class: %avahuer_web.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

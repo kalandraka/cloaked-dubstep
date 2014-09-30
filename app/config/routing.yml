@@ -1,0 +1,3 @@
+AvahuerWebBundle:
+    resource: "@AvahuerWebBundle/Resources/config/routing.yml"
+    prefix:   /
