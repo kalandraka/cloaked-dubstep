@@ -2,28 +2,83 @@
 
 {% block content %}
     <div class="row">
-        <div class="col-lg-7">
-            <h4>NUESTRA EMPRESA</h4>
-
-            <h6>¿Quiénes somos?</h6>
+        <div class="col-lg-12">
+            <h3>NUESTRA EMPRESA</h3>
+        </div>
+        <div class="col-lg-6">
+            <h4>¿Quiénes somos?</h4>
             <p>Somos su agencia de seguridad con 25 años de experiencia en el campo, con una plataforma administrativa y operativa acorde con sus necesidades en la cual laboran ejecutivos con experiencia en leyes, procedimientos policiales y actuación en ambientes diversos.</p>
             <p>Como empresa moderna, nuestra organización tiene al frente de la gerencia general al MBA. Manuel Valverde Huertas, quien además de su preparación académica, cuenta en su haber con 27 años de trabajo en el área de seguridad. Adicionalmente, en su estructura administrativa colabora la gerencia de Recursos Humanos y Gerencia Operativa a cargo de profesionales en cada una de las especialidades. Para la ejecución operativa de nuestras labores, disponemos de Gerentes de cuenta, supervisores y coordinadores de seguridad, lo que asegura un servicio de primera calidad y a precio razonable para nuestros clientes.</p>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-offset-1 col-lg-5">
             <h4>Acérquese a nosotros</h4>
-            <div class="row">
-                <span class="glyphicon glyphicon-lock col-lg-1"></span>
-                <p class="col-lg-10">Conozca algunas de las empresas que confían en los servicios de seguridad de la Agencia Valverde Huertas</p>
+            <div class="row hovereffect">
+                <a href="{{ path('avahuer_web_clientes') }}">
+                    <span class="empresa-icon icon-lock col-lg-2"></span>
+                    <p class="col-lg-10">Conozca algunas de las empresas que confían en los servicios de seguridad de la Agencia Valverde Huertas</p>
+                </a>
             </div>
-            <div class="row">
-                <span class="glyphicon glyphicon-globe col-lg-1"></span>
-                <p class="col-lg-10">Conozca en profundidad la misión, la visión y los valores que distinguen nuestra empresa</p>
+            <div class="row hovereffect">
+                <a href="{{ path('avahuer_web_misionvision') }}">
+                    <span class="empresa-icon icon-globe col-lg-2"></span>
+                    <p class="col-lg-10">Conozca en profundidad la misión, la visión y los valores que distinguen nuestra empresa</p>
+                </a>
             </div>
-            <div class="row">
-                <span class="glyphicon glyphicon-briefcase col-lg-1"></span>
-                <p class="col-lg-10">Conozca los servicios profesionales de seguridad que le ofrece la Agencia Valverde Huertas</p>
+            <div class="row hovereffect">
+                <a href="{{ path('avahuer_web_servicios') }}">
+                    <span class="empresa-icon icon-shield col-lg-2"></span>
+                    <p class="col-lg-10">Conozca los servicios profesionales de seguridad que le ofrece la Agencia Valverde Huertas</p>
+                </a>
             </div>
+        </div>
+        <div class="col-lg-10">
+            <h4>Historia</h4>
+            <div class="overfloweffect" style="height: 450px; overflow: hidden; position: relative; margin: 0 auto;">
+                <div id="wrapper" style="position: absolute; top: 0;">
+                    <p>Agencia Valverde Huertas es una empresa fundada e inscrita en el Registro Público de la Propiedad en el año 1992 y su principal objetivo es brindar servicios de seguridad privada en todo el país. Su primera sede fue en Plaza González Víquez, en las oficinas que utilizaba Meir Rent a Car. Posteriormente se trasladó a unas oficinas ubicadas en Barrio González Lachman, 100 metros sur y 200 metros oeste del O.I.J. De ahí se trasladó a la penúltima sede, ubicada, 275 metros sur de la CC.SS., frente a la Clínica Aguilar Bonilla y de ahí, se trasladó a su domicilio actual (edificio propio) en Plaza González Víquez (frente al costado sureste de la plaza de deportes). La compañía inició operaciones activamente el 31 de diciembre del 2003, cuando su fundador obtuvo el primer contrato de seguridad, que fue el Balneario de Ojo de Agua, localizado en San Antonio de Belén. Este contrato era de cuatro oficiales diurnos y tres nocturnos y era supervisado directamente por el dueño de la empresa.</p>
+                    <p>Agencia Valverde Huertas fue fundada por Manuel Valverde Huertas, quién tiene una trayectoria de más de treinta años en el mercado. Oriundo de Puriscal, incursionó en el campo de la seguridad en los años ochenta cuando ingresó como investigador en el Organismo de Investigación Judicial. Ahí laboró por más de 10 años. Después pasó a dirigir la Gerencia Administrativa de Periféricos (Actualmente Perimercados), donde, dentro de sus funciones, estaba velar por el buen funcionamiento del departamento de Gestion Preventiva, que eran los encargados de la seguridad interna de los Periféricos en aquellos años. Posteriormente dirigió un grupo de empresas de seguridad privada, tanto en Costa Rica como en Centroamérica. Esta experiencia, junto con la preparación universitaria en el campo de la administración y las finanzas, le motivaron a crear su propia organización y de ahí nació AVAHUER S.A. </p>
+                    <p>En su primer año, la compañía se dedicó únicamente a brindar el servicio de seguridad privada en residenciales y centros comerciales, entre otros, debido al poco capital con que se contaba. En sus inicios, la estructura administrativa eran únicamente el Gerente General, Asistente  Administrativa y el jefe de operaciones, personeros que actualmente laboran en la empresa. </p>
+                    <p>Durante el año 2004, tres nuevos clientes contrataron los servicios de la empresa, a saber: Perimercados S.A., Colchones Jirón y una Cooperativa de Ahorro y Crédito. Sin embargo, el punto de equilibrio se logra cuando el Grupo Monge Herrera Internacional (actualmente Grupo M.) contrata los servicios de AVAHUER y permite la verdadera consolidación administrativa, operativa y financiera de la compañía.</p>
+                    <p>Obtenida la estabilidad, se adquirieron nuevos clientes como Almacenes de Electrodomésticos Casa Blanca y El Verdugo, Coopejudicial, Cegesti, ICT., INCOP,  Centro comerciales como: Mall San Pedro, Plaza Rohrmoser, plaza Los Laureles, La Verbena, Plaza Florencia y Plaza América. Después vinieron Constructora Volio y Trejos, Ciamesa, Cámara de Comercio, Grupo Farmanova, el Outlet Mall, Corporación Yanber y otros.</p>
+                    <p>La estrategia permanente de la empresa siempre ha sido brindar servicios de calidad y una excelente atención al cliente.  Estas características permitieron a la Agencia incursionar en el mercado de la seguridad de empresas multinacionales radicadas en Costa Rica, llegando a brindarle servicio a las compañías Componentes Intel de Costa Rica, Hospira, Boston Scientific, Grupo Claro, Clorox de Costa Rica, Tech Data y Bank Of América.  El mercadeo entre estas empresas fue innecesario, pues entre ellas mismas se recomendaban nuestra contratación.</p>
+                    <p>Paralelo a este nicho de mercado, se consiguieron contratos de seguridad en zonas francas, como Propark, Zona Franca Bes, Zona Franca del Este y Almacén Fiscal del Pacífico.</p>
+                    <p>Posicionados en estos mercados, se enfocó la estrategia hacia la consecución de contratos con Instituciones del Estado y de esta forma se sumó a los contratos existentes con el Instituto Costarricense de Puertos del Pacífico y el Instituto costarricense de Turismo, sendas contrataciones con Correos de Costa Rica, Dirección General de Tributación Directa, Instituto Nacional de Acueductos y Alcantarillados, Tribunal Supremo de Elecciones, Sistema Nacional de Áreas de Conservación (SINAC)  e Instituto Costarricense de Electricidad.</p>
+                    <p>Fieles a los principios de eficiencia, calidad y excelencia en el servicio, se preparó la estructura y se capacitó al personal para buscar la certificación de calidad BASC que obtuvimos en el año 2012 e ISO 9001, obtenida en el año 2014.</p>
+                    <p>Durante este proceso de crecimiento de Agencia Valverde Huertas y ante la creciente demanda de servicios, se crearon tres empresas más de seguridad, a saber: Servicios de Seguridad y Monitoreo SERMO S.A., Seguridad Avahuer S.A. y Servicios MAVA. Estas cuatro compañías, junto con la empresa SELIME (empresa de limpieza creada en el año 2008), conforman lo que hoy en día se conoce como GRUPO V DE COSTA RICA.</p>
+                    <p>Con el respaldo financiero de este grupo, se ha incursionado en dos campos más que son: Importación y Venta de Prótesis y Órtesis por medio de la empresa ORTOPHEC INC S.A. y el desarrollo inmobiliario a través de las compañías Constructora Norle S.A. y Desarrollos LIBA S.A.</p>
+                    <p class="pull-right">Manuel Valverde.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2" style="height: 450px; padding-top: 64px;">
+            <span class="movement-icon icon-up"></span>
+            <span class="movement-icon icon-down" style="margin-top: 280px;"></span>
         </div>
     </div>
 
 {% endblock content %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        $(function(){
+            $('.hovereffect').on('mouseenter', function(){
+                $(this).find('span.empresa-icon').addClass('active');
+                $(this).find('p').addClass('active');
+            })
+            .on('mouseleave', function(){
+                $(this).find('span.empresa-icon').removeClass('active');
+                $(this).find('p').removeClass('active');
+            });
+            $('span.movement-icon.icon-down').on('click', function(){
+                $('#wrapper').animate({top: $('#wrapper').position().top - 100}, "fast");
+            });
+            $('span.movement-icon.icon-up').on('click', function(){
+                var top = $('#wrapper').position().top;
+                if(top < 0)
+                    $('#wrapper').animate({top: $('#wrapper').position().top + 100}, "fast");
+                else if(top > 0)
+                    $('#wrapper').animate({top: 0}, "fast");
+            });
+        });
+    </script>
+{% endblock javascripts %}

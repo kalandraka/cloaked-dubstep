@@ -6,9 +6,15 @@ use Avahuer\WebBundle\Form\Type\ContactoType;
 use Doctrine\ORM\Query\Expr;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
 {
+    /**
+     * @Route(path="/", name="avahuer_web_homepage")
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction()
     {
         /*$em = $this->get('doctrine.orm.entity_manager');
@@ -40,6 +46,12 @@ class DefaultController extends Controller
             ));
     }
 
+    /**
+     * @Route(path="/contacto", name="avahuer_web_contacto")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function contactoAction(Request $request)
     {
         $form = $this->createForm(new ContactoType(), null, array());
@@ -50,6 +62,12 @@ class DefaultController extends Controller
             ));
     }
 
+    /**
+     * @Route(path="/empresa", name="avahuer_web_empresa")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function empresaAction(Request $request)
     {
         return $this->render('AvahuerWebBundle:Empresa:empresa.html.twig', array(
@@ -57,5 +75,68 @@ class DefaultController extends Controller
             ));
     }
 
+    /**
+     * @Route(path="/clientes", name="avahuer_web_clientes")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function clientesAction(Request $request)
+    {
+        return $this->render('AvahuerWebBundle:Empresa:clientes.html.twig', array(
+                'active_menu' => 'empresa',
+            ));
+    }
 
+    /**
+     * @Route(path="/certificaciones", name="avahuer_web_certificaciones")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function certificacionesAction(Request $request)
+    {
+        return $this->render('AvahuerWebBundle:Empresa:certificaciones.html.twig', array(
+                'active_menu' => 'empresa',
+            ));
+    }
+
+    /**
+     * @Route(path="/mision&vision", name="avahuer_web_misionvision")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function misionVisionAction(Request $request)
+    {
+        return $this->render('AvahuerWebBundle:Empresa:mision-vision.html.twig', array(
+                'active_menu' => 'empresa',
+            ));
+    }
+
+    /**
+     * @Route(path="/servicios", name="avahuer_web_servicios")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function serviciosAction(Request $request)
+    {
+        return $this->render('AvahuerWebBundle:Servicios:servicios.html.twig', array(
+                'active_menu' => 'servicios',
+            ));
+    }
+
+    /**
+     * @Route(path="/oficiales", name="avahuer_web_oficiales")
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function oficialesAction(Request $request)
+    {
+        return $this->render('AvahuerWebBundle:Oficiales:oficiales.html.twig', array(
+                'active_menu' => 'oficiales',
+            ));
+    }
 }

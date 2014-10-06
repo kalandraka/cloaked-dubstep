@@ -2,14 +2,19 @@
 @import "bootstrap-3.2.0/mixins.less";
 
 @principal-color-bg: #B8B9BB;
-@hover-color-bg: #3D3D73;
+@hover-color-bg: #3D3D74;
 @white-color: #fff;
 @footer-bg-color: #EFEFF0;
 @footer-font-color: #3E3D74;
 
+@heading-principal-color: #3e3d74;
+@paragraph-principal-color: #656669;
+
 @border-radius-base-avahuer: 0;
 @padding-base-vertical-avahuer: 1px;
 @padding-base-horizontal-avahuer: 6px;
+@default-line-height: 1.6em;
+@paragraph-font-size: 1em;
 
 // Avahuer navbar
 .navbar-avahuer {
@@ -181,6 +186,7 @@
   }
 }
 
+// Acahuer footer
 footer {
   margin-top: 32px;
   background-color: @footer-bg-color;
@@ -220,10 +226,12 @@ footer {
   }
 }
 
+// Custom btn
 .btn {
   .button-size(@padding-base-vertical-avahuer; @padding-base-horizontal-avahuer; @font-size-base; @line-height-base; @border-radius-base-avahuer);
 }
 
+// Custom carousel
 .carousel-indicators {
 /*  position: absolute;
   bottom: 10px;
@@ -264,4 +272,107 @@ footer {
     background-color: @hover-color-bg;
     border: 1px solid @hover-color-bg;
   }
+}
+
+// Custom paragraph style
+.container {
+  text-align: left;
+  p {
+    text-align: justify;
+    font-size: @paragraph-font-size;
+    line-height: @default-line-height;
+    color: @paragraph-principal-color;
+    &:hover {
+      color: @heading-principal-color;
+    }
+  }
+  h3 {
+    font-size: @paragraph-font-size * 1.5;
+    font-weight: 500;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+  }
+  h4 {
+    text-align: left;
+    font-size: @paragraph-font-size * 1.25;
+    font-weight: 300;
+    padding-bottom: 20px;
+    background-image: url('../images/header-underline.png');
+    background-repeat: no-repeat;
+    background-size: 50% 5.5%;
+    -moz-background-size: 50% 5.5%;
+    -webkit-background-size: 50% 5.5%;
+    background-position: 0 32px;
+    -moz-background-position: 0 32px;
+    -webkit-background-position: 0 32px;
+  }
+}
+
+.empresa-icon {
+  background-image: url('../images/icons/set-empresa-small.png');
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  display: block;
+  cursor: pointer;
+}
+
+.icon-globe {
+  background-position: 0 -35px;
+  -moz-background-position: 0 -35px;
+  -webkit-background-position: 0 -35px;
+  &.active {
+    background-position: 0 0;
+    -moz-background-position: 0 0;
+    -webkit-background-position: 0 0;
+  }
+}
+.icon-lock {
+  background-position: -35px -35px;
+  -moz-background-position: -35px -35px;
+  -webkit-background-position: -35px -35px;
+  &.active {
+    background-position: -35px 0;
+    -moz-background-position: -35px 0;
+    -webkit-background-position: -35px 0;
+  }
+}
+.icon-shield {
+  background-position: -71px -35px;
+  -moz-background-position: -71px -35px;
+  -webkit-background-position: -71px -35px;
+  &.active {
+    background-position: -71px 0;
+    -moz-background-position: -71px 0;
+    -webkit-background-position: -71px 0;
+  }
+}
+
+.movement-icon {
+  background-image: url('../images/icons/set-up-down-right-left.png');
+  background-repeat: no-repeat;
+  height: 46px;
+  width: 46px;
+  display: block;
+  cursor: pointer;
+}
+.icon-up {
+  background-position: -46px 0;
+  -moz-background-position: -46px 0;
+  -webkit-background-position: -46px 0;
+}
+.icon-down {
+  background-position: 0 0;
+  -moz-background-position: 0 0;
+  -webkit-background-position: 0 0;
+}
+.icon-right {
+  background-position: -92px 0;
+  -moz-background-position: -92px 0;
+  -webkit-background-position: -92px 0;
+}
+.icon-left {
+  background-position: -138px 0;
+  -moz-background-position: -138px 0;
+  -webkit-background-position: -138px 0;
 }
