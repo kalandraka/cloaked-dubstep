@@ -1,4 +1,49 @@
 {% extends '::base.html.twig' %}
 
 {% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>NUESTROS CLIENTES</h4>
+            <p>Conozca algunos de los clientes que se satisfacen de trabajar con nosotros</p>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 32px;">
+        <div class="col-lg-1" style="height: 300px; vertical-align: middle;">
+            <span class="movement-icon icon-left" style="margin-top: 80px;"></span>
+        </div>
+        <div class="col-lg-9" style="margin-left: 25px; margin-right: 25px;">
+            <div class="row" style="">
+                <div class="col-lg-3" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-bankofamerica.png') }}" alt=""/>
+                </div>
+                <div class="col-lg-2" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-claro.png') }}" alt=""/>
+                </div>
+                <div class="col-lg-2" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-incop.png') }}" alt=""/>
+                </div>
+                <div class="col-lg-3" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-correosdecostarica.png') }}" alt=""/>
+                </div>
+            </div>
+            <div class="row" style="">
+                <div class="col-lg-3" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-ciamesa.png') }}" alt=""/>
+                </div>
+                <div class="col-lg-2" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-ict.png') }}" alt=""/>
+                </div>
+                <div class="col-lg-2" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-hospira.png') }}" alt=""/>
+                </div>
+                <div class="col-lg-2" style="margin-left: 32px; vertical-align: middle;">
+                    <img class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/cliente-tse.png') }}" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1" style="height: 300px; vertical-align: middle;">
+            <span class="movement-icon icon-right" style="margin-top: 80px;"></span>
+        </div>
+    </div>
 {% endblock content %}
