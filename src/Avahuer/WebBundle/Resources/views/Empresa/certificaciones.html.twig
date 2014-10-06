@@ -1,4 +1,43 @@
 {% extends '::base.html.twig' %}
 
 {% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 style="width: 50%;">CERTIFICACIONES</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-offset-1 col-lg-5">
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <img style="width: 60%;" class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/iso-9001.png') }}" alt="iso 9001"/>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 80px;">
+                <div class="col-lg-2">
+                    <span class="movement-icon icon-right"></span>
+                </div>
+                <div class="col-lg-10">
+                    <p>Esta norma se basa en una serie de principios de gestión de calidad, como una fuerte orientación al cliente, la motivación y la implicación de la alta dirección, el enfoque basado en procesos y la mejora continua.</p>
+                    <p>Agencia Valverde Huertas S.A. se encuentra certificada desde el año 2014, es la primera empresa costarricense, que brinda servicios de seguridad física, certificada con la norma INTE/ISO 9001:2008 por INTECO.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-offset-1 col-lg-5">
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <img style="width: 70%;" class="img-responsive" src="{{ asset('bundles/avahuerweb/images/assets/basc.png') }}" alt="basc"/>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 80px;">
+                <div class="col-lg-2">
+                    <span class="movement-icon icon-right"></span>
+                </div>
+                <div class="col-lg-10">
+                    <p>Las empresas certificadas bajo el Sistema de Gestión BASC, demuestran el cumplimiento de los requisitos de programas de seguridad establecidos por diferentes organismos internacionales. Fomenta prácticas seguras en la cadena logística del comercio internacional</p>
+                    <p>Dicha certificación fue obtenida por Agencia Valverde Huertas S.A. en el año 2010.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
