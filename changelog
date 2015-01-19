@@ -1,0 +1,11 @@
+beta2(19/01/2015):
+  - Actualizada imagen de la ISO 9001 en página de certificaciones de la empresa.
+  - Eliminadas las imágenes del slider y dejando únicamente la del edificio con el texto “Conozca la historia de nuestra empresa”.
+  - Adicionada al slider de imágenes en la página principal la foto de todos juntos y con el caption “Conozca nuestras certificaciones”.
+  - Justificados los textos en el footer(barra inferior del sitio).
+  - Actualizado enlace de pagina principal para en lugar de "Certificaciones" sea "Servicios". Se utiliza como imagen la del hombre con traje oscuro.
+  - Actualizada la interfaz de características del oficial para que cambie la descripción en dependencia de la característica seleccionada. Al igual que el perfil del oficial.
+  - Adicionada en la sección de contacto, el teléfono de la empresa y correo. Actualizado el footer del sitio con los datos correctos de contacto.
+  - Separados los puntos de la sección de "Servicios"(Se incluyó más espaciado entre características).
+  - Ajustado el header(encabezado) del sitio para que quedara el mismo espacio tanto arriba del logo como abajo.
+  - Actualizado el color principal de los botones a un azul oscuro tal como aparecía en el diseño inicial.
