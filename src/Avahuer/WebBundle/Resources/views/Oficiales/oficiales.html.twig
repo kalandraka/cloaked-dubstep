@@ -1,31 +1,109 @@
 {% extends '::base.html.twig' %}
 
 {% block content %}
-    <div class="row">
+        <div class="row">
         <div class="col-lg-6">
             <h4>CARACTERÍSTICAS DEL OFICIAL</h4>
             <ul>
-                <li>Observación</li>
-                <li>Retentiva</li>
-                <li>Honradez</li>
-                <li>Respeto</li>
-                <li>Seriedad</li>
-                <li>Discreción</li>
-                <li>Exceso de confianza</li>
-                <li>Actitud de servicio</li>
+                <li> <a class="texto perfil-oculta" for="#observacion" > Observación</a></li>
+                <li> <a class="texto perfil-oculta" for="#retencion" >Retentiva </a></li>
+                <li> <a class="texto perfil-oculta" for="#honradez" >Honradez</a></li>
+                <li> <a class="texto perfil-oculta" for="#respeto" >Respeto</a></li>
+                <li> <a class="texto perfil-oculta" for="#seriedad" >Seriedad</a></li>
+                <li><a class="texto perfil-oculta" for="#discrecion" >Discreción </a></li>
+                <li><a class="texto perfil-oculta" for="#confianza" >Exceso de confianza</a></li>
+                <li> <a class="texto perfil-oculta" for="#actitudservicio" >Actitud de servicio</a></li>
             </ul>
-            <p>Por características propias del puesto, es normal que el oficial de seguridad maneje información y documentación confidencial, por lo que se requiere mucha discreción en su trabajo.</p>
-        </div>
+            <div id="caracteristicas">
+                <div class="cp_oculta" id="default">
+                    <p>Por características propias del puesto, es normal que el oficial de seguridad maneje información y documentación confidencial, por lo que se requiere mucha discreción en su trabajo.</p>
+                </div>
+
+                <div  class="perfil-oculta" id="observacion" style="display: block;">
+                    <p>
+                        El oficial debe examinar con atención, mirar con recato, advertir los movimientos de forma tal que sea capaz de detectar y asimilar la información que surge en sus alrededores. Deberá ser capaz de detectar irregularidades alrededor de la propiedad, tales como ventanas desbloqueadas o presencia de personas no autorizadas.
+
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="retencion">
+                    <p>
+                        Debe poseer retentiva para recordar momentos que pueden ser significativos, rostros, personas, autos, algo que pueda ser de utilidad durante una investigación. Recordar los hechos acontecidos lo más intactos posibles.
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="honradez">
+                    <p>
+                        Una de las cualidades más importantes de un excelente guardia de seguridad es la honestidad. Se necesita alguien que sea confiable, es decir, puesto que esta persona elimina la posibilidad de inseguridad de un área determinada.
+
+                    </p>
+                </div>
+                <div  class="perfil-oculta" id="respeto">
+                    <p>
+                        Debe ser una persona respetuosa, tanto de las normas que se le establecen para realizar su trabajo, como para el trato con el personal, ajeno o interno de la empresa.
+                    </p>
+                </div>
+                <div  class="perfil-oculta" id="seriedad">
+                    <p>
+                        Debe ser una persona seria, dedicada a cumplir con su deber con la mayor seriedad, debe ser formal, cumplidor.
+
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="discrecion">
+                    <p>
+                        Debe ser una persona que suele adoptar una actitud de prudencia en ciertas circunstancias, guardar reserva y mantener cautela para no decir algo que se sabe o piensa. A veces hay trabajos internos o información confidencial que puede ser delicada; se requiere personal con el que sea seguro compartir este tipo de información.
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="confianza">
+                    <p>
+                        La confianza es la seguridad o esperanza firme que alguien tiene de otro individuo o de algo. Debe ser una persona en la que se pueda confiar plenamente en el buen desempeño de su trabajo y en su conducta.
+
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="actitudservicio">
+                    <p>
+                        Actitud de servicio es la capacidad, disposición para realizar un trabajo, por lo que el personal deberá poseer plena disposición de realizar correctamente su trabajo.
+                    </p>
+                </div>
+            </div>
+            </div>
+
         <div class="col-lg-offset-1 col-lg-5">
             <h4>PERFIL DEL OFICIAL</h4>
             <ul>
-                <li>Atención al trabajo</li>
-                <li>Apariencia personal</li>
-                <li>Actitud</li>
-                <li>Conocimiento de las instalaciones</li>
-                <li>Conocimiento especial</li>
+                <li><a class="texto perfil-oculta" for="#atencion"> Atención al trabajo</a></li>
+                <li><a class="texto perfil-oculta" for="#apariencia"> Apariencia personal</a></li>
+                <li><a class="texto perfil-oculta" for="#actitud">Actitud</a></li>
+                <li><a class="texto perfil-oculta" for="#instalaciones">Conocimiento de las instalaciones</a></li>
+                <li><a class="texto perfil-oculta" for="#conocimientoespecial">Conocimiento especial</a></li>
             </ul>
-            <p>Debe comportarse de manera firme y segura, mostrarse amable y cortés en todo momento, además de ejecutar apropiadamente las órdenes de sus superiores. Siempre mantendrá una actitud de respeto hacia sus compañeros de   trabajo y con el público en general, evitando afrontar conflictos.</p>
+
+            <div id="perfil">
+                <div class="perfil-oculta" id="default2">
+                    <p>Debe comportarse de manera firme y segura, mostrarse amable y cortés en todo momento, además de ejecutar apropiadamente las órdenes de sus superiores. Siempre mantendrá una actitud de respeto hacia sus compañeros de   trabajo y con el público en general, evitando afrontar conflictos.</p>
+                </div>
+                <div class="perfil-oculta" id="atencion" style="display: block;">
+                    <p>
+                        Los oficiales de seguridad profesionales tienen una responsabilidad con el negocio o lugar donde brindan servicio de seguridad, además de asegurarse de que ningún crimen se cometa o que nadie resulte herido. Por esto deben prestar suma atención en la realización de su trabajo.
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="apariencia">
+                    <p>
+                        Deben cuidar de la apariencia personal, llevando siempre el uniforma correctamente y las credenciales que lo acrediten como oficial. Cuidar de su aspecto para el desarrollo del trabajo.
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="actitud">
+                    <p>
+                        Debe mantener una actitud seria ante del trabajo y las responsabilidades que se le han otorgado, además, de mantener la honestidad y la actitud de servicio.
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="instalaciones">
+                    <p>
+                        Debe poseer pleno conocimiento de las instalaciones, de los puntos de entrada y salida autorizados, y de los lugares donde debe prestar más atención por posibles accesos no autorizados.
+                    </p>
+                </div>
+                <div class="perfil-oculta" id="conocimientoespecial">
+                    <p>Debe tener capacidad para persuadir y evitar problemas. Debe ser capaz de aplicar técnicas de primeros auxilios. Debe demostrar destreza en el uso y manipulación de armas autorizadas para su puesto de trabajo. Debe saber qué procedimientos desarrollar en cada caso. </p>
+                </div>
+
         </div>
         <div class="col-lg-12"><hr/></div>
         <div class="col-lg-12">
@@ -42,4 +120,26 @@
             </div>
         </div>
     </div>
+  </div>
 {% endblock content %}
+
+  {% block javascripts %}
+     <style type="text/css">div.cp_oculta{display: none;}</style>
+     <style type="text/css">div.perfil-oculta{display: none;}</style>
+        <script type="text/javascript">
+            $('a.perfil-oculta').on('click', function(e){
+                e.preventDefault();
+
+                var divid = $(this).attr('for');
+
+                $(this).parent().parent().parent().find('div div.perfil-oculta').each(function(key, value){
+                    //$(value).css('display','none');
+                    if($(value).css('display') !== 'none'){
+                        $(value).slideUp(200);
+                    }
+                });
+
+                $(divid).slideDown(400);
+            });
+        </script>
+{% endblock javascripts %}
