@@ -405,6 +405,12 @@ footer {
   right: 5%;
   top: 35%;
   bottom: 0;
+  &.large {
+    left: 42%;
+  }
+  &.small {
+    left: 58%
+  }
   & h3 {
     background-color: rgba(62,61,116,0.85);
     padding: 24px 0;
@@ -414,11 +420,15 @@ footer {
   }
   & p {
     text-decoration: white;
-    color: white;
+    color: #EFEFF0;
   }
-  & a{
+  & a {
       text-decoration: none;
-      color: white;
+      color: #fff;
+    &:hover p {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
 
